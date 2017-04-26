@@ -1,0 +1,43 @@
+doctype html
+html(lang="en")
+    head
+        meta(charset="UTF-8")
+        meta(name="viewport", content="width=device-width,  initial-scale=1.0")
+        link(href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,700" rel="stylesheet")
+        link(href="css/font-awesome.css" rel="stylesheet")
+        link(href='css/reset.css', rel='stylesheet')
+        link(href='vendor/slick/slick.css', rel='stylesheet')
+        link(href='vendor/slick/slick-theme.css', rel='stylesheet')
+        link(href='vendor/animate.css/animate.css', rel='stylesheet')
+        link(href='css/style.css', rel='stylesheet')
+        title First Portfolio
+    body
+        header
+            .container
+                block header
+        .slider-block
+            block slider
+        #features.features
+            .container
+                block features
+        section#our-clients.our-clients
+            .container
+                block clients
+        #our-partners.our-partners
+            .container
+                block partners
+        section#our-team.our-team
+            .container
+                block team
+        #our-contact.our-contact
+            .container
+                block contact
+        footer
+            .container
+                block footer
+
+        script(src='vendor/jquery/jquery-3.1.1.min.js')
+        script(src='vendor/slick/slick.js')
+        script(src='vendor/scroll/smooth-scroll.js')
+        script(src="vendor/wow.js/wow.min.js")
+        script(src='js/main.js')

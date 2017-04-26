@@ -1,0 +1,73 @@
+header
+  background: #000
+  position: relative
+  +min-width-768
+    position: absolute
+  width: 100%
+.header
+  position: relative
+  z-index: 999
+  padding: 25px 0
+  +min-width-768
+    padding: 43px 0 23px
+
+.main-menu-logo
+  float: left
+  display: block
+  font-size: 25px
+  color: #ffffff
+
+.main-menu
+  display: none
+  &.is-open
+    display: block
+    margin-top: 30px
+    +min-width-768
+      margin-top: 0
+  &.is-closed
+    display: none
+  background: inherit
+  @extend %no-list
+
+  +min-width-768
+    float: right
+    display: block
+    &.is-closed
+      display: block
+    position: relative
+    width: inherit
+    background: none
+
+  &__item
+    text-align: center
+    &:hover
+      background: rgba(42, 108, 120, 1)
+    &--link
+      font-size: 17px
+      color: #ffffff
+      display: block
+      width: 100%
+      padding: 10px 0 10px 0
+      +min-width-768
+        padding: 0
+
+    +min-width-768
+      display: inline-block
+      margin-left: 33px
+      width: inherit
+      margin-top: 6px
+      margin-left: 20px
+      padding-bottom: 5px
+      &:hover
+        background: transparent
+        box-shadow: inset 0 -2px 0 0 rgba(0,0,0,0.5)
+
+.button--toggle
+  position: absolute
+  width: 39px
+  height: 39px
+  top: 25px
+  right: 5%
+  +toggleable-button
+  +min-width-768
+    display: none

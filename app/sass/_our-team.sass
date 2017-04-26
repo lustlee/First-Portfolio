@@ -1,0 +1,43 @@
+.our-team
+  background: #111111
+  padding: 94px 0 103px
+.title-section--light
+  color: $colorPrimary
+.subtitle-section--light
+  color: $colorSecondary
+
+.team-list
+  padding: 81px 5% 45px
+  @extend %display-flex
+  justify-content: space-around
+.team-list__item
+  text-align: center
+  
+.team-img-profile
+  @extend %img-circle-wrap
+  
+.team-content
+  margin-top: 15px
+  .profile-info
+    line-height: 20px
+    font-size: 14px
+    font-weight: $fontWeightBold
+    color: $colorPrimary
+    span
+      display: block
+      font-weight: $fontWeightRegular
+  .profile-info--social
+    margin-top: 10px
+    display: block
+    .social-link
+      margin-left: 6px
+      font-size: 23px
+      text-align: center
+      @extend %social-icon--rounded
+      .fa
+        padding: 5px
+.decription-team
+  text-align: center
+  padding: 0 17%
+  line-height: 22px
+  color: #ebebeb

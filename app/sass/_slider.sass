@@ -1,0 +1,75 @@
+.slick-slide
+  position: relative
+  img
+    width: 100%
+    height: auto
+
+.slick-prev
+  &::before
+    content: ''
+    display: block
+    background: url("../img/slider-arrows-srpite.svg") 0 center no-repeat
+    width: 58px
+    height: 58px
+    background-size: 116px
+
+.slick-next
+  &::before
+    content: ''
+    display: block
+    background: url("../img/slider-arrows-srpite.svg") -57px center no-repeat
+    width: 58px
+    height: 58px
+    background-size: 116px
+
+.slider-info
+  text-align: center
+  position: absolute
+  top: 15%
+  width: 100%
+  left: 0
+  +min-width-480
+    top: 20%
+  +min-width-768
+    top: 32%
+  +min-width-992
+    top: 36%
+  &__title
+    font-weight: $fontWeightLight
+    color: #ffffff
+    font-size: 16px
+    +min-width-480
+      font-size: 20px
+    +min-width-768
+      font-size: 27px
+      line-height: 50px
+
+  &__subtitle
+    text-transform: uppercase
+    font-weight: $fontWeightBold
+    color: #ffffff
+    font-size: 25px
+    padding-top: 10px
+    padding-bottom: 20px
+    +min-width-480
+      font-size: 30px
+      padding-top: 30px
+      padding-bottom: 30px
+    +min-width-768
+      font-size: 54px
+      padding-top: 30px
+      padding-bottom: 60px
+    +min-width-992
+      font-size: 64px
+      padding-top: 50px
+      padding-bottom: 97px
+
+  &__btn
+    +btn
+    font-size: 20px
+    font-weight: $fontWeightBold
+    padding: 10px 30px
+    +min-width-480
+      padding: 20px 60px
+    +min-width-768
+      padding: 22px 60px

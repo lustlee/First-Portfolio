@@ -1,0 +1,59 @@
+.our-clients
+  background: #fafafa
+  padding: 91px 0 65px
+.feedback-list
+  padding-top: 45px
+.title-section,.subtitle-section
+  text-align: center
+  color: $colorTitle
+
+.title-section
+  font-size: 51px
+  line-height: 60px
+  span
+    font-weight: $fontWeightBold
+.subtitle-section
+  padding-top: 10px
+  font-size: 17px
+
+.feedback-img-profile
+  @extend %img-circle-wrap
+  +size(150px)
+  float: left
+  +min-width-768
+    +size(220px)
+    display: inline-block
+  img
+    width: 100%
+    height: auto
+.feedback-img-profile--pull-right
+  float: right
+.feedback-author
+  display: block
+  font-size: 15px
+  margin-top: 4px
+  color: #7690c5
+.feedback-content
+  @extend %feedback-text-box
+  width: 100%
+  margin: 15px 0
+  padding: 10px
+  +min-width-768
+    margin: 35px 0 50px 29px
+    padding: 35px 82px 37px 82px
+    width: 60%
+    +triangle-left
+  +min-width-992
+    width: 69%
+.feedback-content--pull-left
+  @extend %feedback-text-box
+  width: 100%
+  margin: 15px 0
+  padding: 10px
+  +min-width-768
+    width: 60%
+    +triangle-right
+    margin: 33px 0 50px 29px
+    padding: 33px 52px 38px 104px
+  +min-width-992
+    width: 69%

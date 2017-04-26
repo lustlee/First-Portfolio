@@ -1,0 +1,105 @@
+%no-list
+  padding: 0
+  margin: 0
+  list-style: none
+=size($size)
+  width: $size
+  height: $size
+%img-circle-wrap
+  overflow: hidden
+  display: inline-block
+  +size(220px)
+  border-radius: 50%
+  border: 7px solid $colorPrimary
+%social-icon--rounded
+  color: $colorPrimary
+  overflow: hidden
+  display: inline-block
+  +size(35px)
+  border-radius: 50%
+  border: 3px solid $colorPrimary
+%display-flex
+  display: flex
+  flex-direction: row
+  flex-wrap: wrap
+
+%feedback-text-box
+  position: relative
+  float: left
+  width: 69%
+  box-sizing: border-box
+  margin: 35px 0 50px 29px
+  padding: 35px 82px 37px 82px
+  border: 2px solid #f2f2f2
+  background: #fff
+  font-size: 20px
+  line-height: 32px
+
+=linear-gradient($color1)
+  background-image: linear-gradient(to bottom, lighten($color1, 10%) 0%, darken($color1, 10%) 100%)
+
+=toggleable-button
+  &::before
+    content: "\2630"
+    color: #ffffff
+    position: absolute
+    right: 5%
+    top: 10%
+    cursor: pointer
+    font-size: 40px
+
+=btn
+  color: #ffffff
+  border-radius: 3px
+  border: 2px solid $colorPrimary
+  display: inline-block
+  text:
+    decoration: none
+    
+=triangle-left
+  &::before
+    content: ""
+    position: absolute
+    left: -22px
+    top: 45%
+    display: inline-block
+    width: 0
+    height: 0
+    border-style: solid
+    border-width: 11.5px 21px 11.5px 0
+    border-color: transparent #f2f2f2 transparent transparent
+  &::after
+    content: ""
+    position: absolute
+    left: -19px
+    top: 45%
+    display: inline-block
+    width: 0
+    height: 0
+    border-style: solid
+    border-width: 11.5px 21px 11.5px 0
+    border-color: transparent #ffffff transparent transparent
+
+=triangle-right
+  &::before
+    content: ""
+    position: absolute
+    right: -22px
+    top: 45%
+    display: inline-block
+    width: 0
+    height: 0
+    border-style: solid
+    border-width: 11.5px 0 11.5px 21px
+    border-color: transparent transparent transparent #f2f2f2
+  &::after
+    content: ""
+    position: absolute
+    right: -19px
+    top: 45%
+    display: inline-block
+    width: 0
+    height: 0
+    border-style: solid
+    border-width: 11.5px 0 11.5px 21px
+    border-color: transparent transparent transparent #ffffff
