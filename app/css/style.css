@@ -108,7 +108,7 @@ header
 
     width: 100%;
 
-    background: #000;
+    background: #7690c5;
 }
 
 @media screen and (min-width: 768px)
@@ -198,7 +198,7 @@ header
 
 .main-menu__item:hover
 {
-    background: #2a6c78;
+    background: black;
 }
 
 .main-menu__item--link
@@ -236,7 +236,7 @@ header
     .main-menu__item:hover
     {
         background: transparent;
-        box-shadow: inset 0 -2px 0 0 rgba(0, 0, 0, .5);
+        box-shadow: inset 0 -2px 0 0 #3c61ad;
     }
 }
 
